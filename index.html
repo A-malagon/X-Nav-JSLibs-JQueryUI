@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <link href="jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="index.js"></script>
+	<script src="jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="droppable" class="ui-widget-header">
+        <h3>Reserva tu hotel</h3>           
+        <p>Añademe a la cesta</p>
+        <div id="dialog" title="Hotel y fechas seleccionadas">
+            No se ha hecho reserva.
+        </div>
+        <button id="TuReserva" type="button">Ver cesta</button> 
+    </div>
+
+    <h1 id="titulo" class="color">¿Hotel? TRIVAGO</h1>
+
+    <div id="habitacion" class ="color">
+        <label id="upText" for="number"><strong>Seleciona el tipo de habitación:</label>
+        <select name="number" id="number">
+          <option>Individual</option>
+          <option selected="selected">Doble</option>
+          <option>Triple</option>
+          <option>Triple + cama supletoria</option>
+          <option>Triple + 2 camas supletorias</option>
+          <option>Suite</option>
+          <option>Suite con bañera hidromasaje</option>
+          <option>OFERTA del día: Habitación + SPA(+7 euros => persona/noche)</option>
+          <option>OFERTA San Valentín: Habitación + SPA&Cava&cena(+10 euros)</option>
+        </select>
+    </div>
+    <div id="fechas" class="color">
+        <p><strong>Selecciona la fecha de entrada y salida:</p>
+        <p><strong>Fecha Entrada:<br><input type="text" id="fechaEntrada" class="datepicker"></p>
+        <p><strong>Fecha Salida:<br><input type="text" id="fechaSalida" class="datepicker"></p>
+    </div>
+    <div id="Pais">
+        <table id="tableCiudades">
+            <tr>
+                <td>
+                    <p class ="color">Elige el hotel de la ciudad:<p>
+                    <ul class="menu">
+                        <li class="ui-state-disabled">Ciudad</li>
+                        <li>Madrid
+                            <ul>
+                                <li class="ui-state-disabled">Hoteles</li>
+                                <li class="categoria1M">Hoteles**</li>
+                                <li class="categoria2M">Hoteles***</li>
+                                <li class="categoria3M">Hoteles****</li>
+                                <li class="categoria4M">Hoteles*****</li>
+                            </ul>
+                        </li>
+                        <li>Barcelona
+                            <ul>
+                                <li class="ui-state-disabled">Hoteles</li>
+                                <li class="categoria1B">Hoteles**</li>
+                                <li class="categoria2B">Hoteles***</li>
+                                <li class="categoria3B">Hoteles****</li>
+                                <li class="categoria4B">Hoteles*****</li>
+                            </ul>
+                        </li>
+                        <li>Valencia
+                            <ul>
+                                <li class="ui-state-disabled">Hoteles</li>
+                                <li class="categoria1V">Hoteles**</li>
+                                <li class="categoria2V">Hoteles***</li>
+                                <li class="categoria3V">Hoteles****</li>
+                                <li class="categoria4V">Hoteles*****</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="color ui-widget">
+                      <label for="tags"><strong>Escribe Hotel(autocompleta): </label>
+                      <input id="Hotel" title="Autocompleta" class="tags">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button id="Rellenar" type="button">Escoge Hotel</button> 
+    </div>
+    
+    <div id="revertible" class="draggable" class="ui-widget-content" title="Arrastrar a la cesta para terminar."></div>
+</body>
+</html>

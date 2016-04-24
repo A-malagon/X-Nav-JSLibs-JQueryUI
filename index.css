@@ -1,0 +1,73 @@
+h1{
+    font-family:"Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.color{
+    color: black;
+}
+
+#titulo{
+    text-align: center;
+    color: blue;
+}
+
+#tableCiudades{
+    width: 100%;
+}
+
+.menu{
+    width: 200px;
+}
+
+#habitacion{
+    margin-right: 25%;
+    width: 400px;
+}
+
+#fechas{
+    position: relative;
+    width: 50%;
+}
+
+#upText{
+    position: relative;
+    top: -15px;
+}
+
+select {
+      width: 130px;
+}
+
+.ui-effects-transfer { border: 3px dotted blue; }
+
+.draggable { 
+    width: 20%; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: left; 
+    margin: -10px -10px -10px 420px; 
+    border-style: solid;
+    background-color: red;
+    font-size: 0.8em;
+}
+
+#droppable { 
+    width: 250px; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: right; 
+    margin: -10px; 
+    position: relative;
+    background-color: red;
+    z-index: 20;
+}
+
+
+#tabs{
+    float:right;
+}
+
+body{
+    background-image: url("images/trivago.jpg");
+}
