@@ -21,7 +21,7 @@
         <button id="TuReserva" type="button">Ver cesta</button> 
     </div>
 
-    <h1 id="titulo" class="color">¿Hotel? <img src="images/trivago.jpg" width="100" align="center" style="margin: -10px -10px 0px 0px"></h1>
+    <h1 id="titulo" class="color">¿Hotel? <img src="images/trivago.jpg" width="100" align="center" style="margin: -10px 0px 0px 0px"></h1>
 
     <div id="habitacion" class ="color">
         <label id="upText" for="number"><strong>Seleciona el tipo de habitación:</label>
